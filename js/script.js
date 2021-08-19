@@ -71,6 +71,7 @@ function documentActions(e) {
 		}	
 	}
 }
+
 if(document.querySelectorAll('.inner-menu__settings')) {
 	const changesButton = document.querySelectorAll('.inner-menu__settings');
 	changesButton.forEach(change => {
@@ -79,3 +80,4 @@ if(document.querySelectorAll('.inner-menu__settings')) {
 	})
 })
 }
+
