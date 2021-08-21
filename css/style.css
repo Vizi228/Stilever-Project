@@ -113,7 +113,8 @@ li {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   background-color: #EDFCFF;
-  padding: 1% 15px 3% 15px;
+  padding: 1% 15px 0% 15px;
+  height: 100%;
 }
 
 ._container {
@@ -206,6 +207,16 @@ li {
   .main__body {
     margin: 0;
   }
+}
+
+.main .main__body._active {
+  display: none;
+}
+
+.main .main__account._active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .menu-main {
@@ -323,7 +334,7 @@ li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 50%;
+  margin-top: 20%;
 }
 
 @media (max-width: 767px) {
@@ -1088,5 +1099,198 @@ li {
 .main__account {
   background-color: #fff;
   border-radius: 20px;
+  padding: 40px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70%;
+  margin-left: 20px;
+  display: none;
+}
+
+.main__account._active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.account-main__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 1200px) {
+  .account-main__head {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.account-main__manage {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.account-main-head__title {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+@media (max-width: 980px) {
+  .account-main-head__title {
+    margin-bottom: 30px;
+  }
+}
+
+.account-main-head__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 2px 0 0;
+}
+
+.account-main-head__settings {
+  background-color: #18ACFF;
+  -webkit-box-shadow: 0 0 5px #18ACFF;
+          box-shadow: 0 0 5px #18ACFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  padding: 10px 14px 10px 14px;
+  font-size: 13;
+}
+
+.account-main-head__settings button {
+  color: #fff;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.account-main-head__settings button::before {
+  content: url(../img/icons/Filter.svg);
+  margin: 0 5px 0 0;
+  font-size: 15px;
+}
+
+.account-main-head__user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.account-main-head__avatar {
+  margin-left: 15px;
+}
+
+.account-main-head__arrow {
+  margin: 10px 0 0 10px;
+}
+
+.manage-account__body {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.account-manage-body__image {
+  position: relative;
+}
+
+.account-manage-body__image .account-manage-body__profile {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 40px;
+  left: 72px;
+}
+
+.account-manage-body__image .account-manage-body__profile p {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.account-manage-body__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.account-manage-body__block {
+  width: 90px;
+  height: 90px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  margin: 20px  0 0 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.account-manage-body ._220 {
+  width: 220px;
+}
+
+.account-main__slider {
+  margin-left: 15px;
+}
+
+.account-main__slide {
+  position: relative;
+}
+
+.account-main .account-main__pagination .swiper-pagination-bullet {
+  background-color: #18ACFF;
+  opacity: 1;
+}
+
+.account-main .account-main__pagination .swiper-pagination-bullet-active {
+  background-color: #FFF;
+}
+
+.account-main__pagination {
+  position: absolute;
+  left: 10px;
 }
 /*# sourceMappingURL=style.css.map */

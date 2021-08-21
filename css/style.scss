@@ -118,7 +118,8 @@ li{
 .page {
 	flex: 1 1 auto;
 	background-color: #EDFCFF;
-  padding: 1% 15px 3% 15px;
+  padding: 1% 15px 0% 15px;
+	height: 100%;
 }
 ._container{
   max-width: 1270px;
@@ -175,6 +176,15 @@ li{
 		@media (max-width: 767px) {
 			margin: 0;
 		}
+	}
+	.main__body._active{
+		display: none;
+	}
+	&__account{
+		
+	}
+	.main__account._active{
+		display: flex;
 	}
 }
 .menu-main {
@@ -265,7 +275,7 @@ li{
 	&__button {
 		display: flex;
 		justify-content: center;
-		margin-top: 50%;
+		margin-top: 20%;
 		@media (max-width: 767px) {
 			position: absolute;
 			bottom: 5%;
@@ -832,10 +842,10 @@ li{
 	}
 }
 .main-body {
-
-	// .main-body__title
 	display: flex;
 	justify-content: space-between;
+	// .main-body__title
+	
 	@media (max-width: 980px) {
 		flex-direction: column;
 	}
@@ -943,6 +953,13 @@ li{
 }
 
 
+
+
+
+
+
+
+
 // account
 
 .main {
@@ -951,6 +968,14 @@ li{
 	&__account {
 		background-color: #fff;
 		border-radius: 20px;
+		padding: 40px ;
+		flex-direction: column;
+		width: 70%;
+		margin-left: 20px;
+		display: none;
+	}
+	&__account._active{
+		display: flex;
 	}
 }
 .account-main {
@@ -958,68 +983,95 @@ li{
 	// .account-main__head
 
 	&__head {
-	}
-
-	// .account-main__body
-
-	&__body {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+		@media (max-width: 1200px) {
+			justify-content: center;
+		}
 	}
 
 	// .account-main__manage
 
 	&__manage {
+		flex: 1;
 	}
 }
-.account-body {
+.account-main-head {
 
-	// .account-body__title
+	// .account-main-head__title
 
 	&__title {
+		font-size: 28px;
+		font-weight: 700;
+		@media (max-width: 980px) {
+			margin-bottom: 30px;
+		}
 	}
 
-	// .account-body__inner
+	// .account-main-head__inner
 
 	&__inner {
 	}
 
-	// .account-body__navigation
+	// .account-main-head__navigation
 
 	&__navigation {
+		display: flex;
+		align-items: center;
+		padding: 0 2px 0 0;
+		@media (min-width: 1310px) {
+		 
+		}
+		@media (max-width: 1310px) {
+		
+		}
+		@media (max-width: 1200px) {
+			
+		}
 	}
 
-	// .account-body__settings
+	// .account-main-head__settings
 
 	&__settings {
+		background-color: #18ACFF;
+			box-shadow: 0 0 5px #18ACFF;
+			display: flex;
+			align-items: center;
+			border-radius: 10px;
+			padding: 10px 14px 10px 14px;
+		  font-size: 13;
+			& button{
+				color: #fff;
+				font-weight: 700;
+				display: flex;
+				align-items: center;		
+			}
+			& button::before{
+				content: url(../img/icons/Filter.svg);
+				margin: 0 5px 0 0;
+				font-size: 15px;
+			}
 	}
 
-	// .account-body__user
+	// .account-main-head__user
 
 	&__user {
+		display: flex;
+		align-items: center;
 	}
 
-	// .account-body__avatar
+	// .account-main-head__avatar
 
 	&__avatar {
+		margin-left: 15px;
 	}
 
-	// .account-body__arrow
+	// .account-main-head__arrow
 
 	&__arrow {
-	}
-
-	// .account-body__image
-
-	&__image {
-	}
-
-	// .account-body__gallery
-
-	&__gallery {
-	}
-
-	// .account-body__block
-
-	&__block {
+		margin: 10px 0 0 10px;
 	}
 }
 .manage-account {
@@ -1032,40 +1084,87 @@ li{
 	// .manage-account__body
 
 	&__body {
+		margin-top: 30px;
+		display: flex;
 	}
 }
-.content-body {
+.account-manage-body {
 
-	// .content-body__slider
+	// .account-manage-body__image
+
+	&__image {
+		position: relative;
+		.account-manage-body__profile{
+			position: absolute;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			top: 40px;
+			left: 72px;
+			p{
+				font-size: 22px;
+				font-weight: 700;
+				color: #fff;
+				margin-top: 10px;
+			}
+		}
+	}
+
+	// .account-manage-body__gallery
+
+	&__gallery {
+	}
+ //. account-manage-body__wrapper
+	&__wrapper{
+		display: flex;
+	}
+	// .account-manage-body__block
+
+	&__block {
+		width: 90px;
+		height: 90px;
+		box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.6);
+		border-radius: 20px;
+		margin: 20px  0 0 40px;
+		display: flex;
+		align-items: center;
+		
+	}
+	._220{
+		width: 220px;
+	}
+}
+.account-main {
+
+	// .account-main__slider
 
 	&__slider {
+		margin-left: 15px;
 	}
-}
-.slider-content {
 
-	// .slider-content__wrapper
+	// .account-main__wrapper
 
 	&__wrapper {
 	}
 
-	// .slider-content__slide
+	// .account-main__slide
 
 	&__slide {
+		position: relative;
 	}
 
-	// .slider-content__pagination
+	// .account-main__pagination
 
-	&__pagination {
+	.account-main__pagination .swiper-pagination-bullet{
+		background-color: #18ACFF;
+		opacity: 1;
+		&-active{
+			background-color: #FFF;
+		}
+	}
+	&__pagination{
+		position: absolute;
+		left: 10px;
 	}
 }
-.swiper-container {
-}
-.swiper-wrapper {
-}
-.swiper-slide {
-}
-.swiper-pagination {
-}
 
-
-// account

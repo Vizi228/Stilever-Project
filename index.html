@@ -8,10 +8,7 @@
     <title>Document</title>
     <title>@@title</title>
     <meta charset="UTF-8" />
-    <link
-      rel="stylesheet"
-      href="css/swiper.css"
-    />
+    <link rel="stylesheet" href="css/swiper.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -74,7 +71,9 @@
                       <img src="img/Avatar.svg" alt="" />
                     </div>
                     <div class="inner-menu__friend">
-                      <div class="inner-menu__nickname">Stilever_dasdasdsadadasdads</div>
+                      <div class="inner-menu__nickname">
+                        Stilever_dasdasdsadadasdads
+                      </div>
                       <div class="inner-menu__status">
                         <span
                           class="inner-menu__indicator _indicator-online"
@@ -107,7 +106,8 @@
                     </div>
                     <div class="inner-menu__friend">
                       <div class="inner-menu__nickname">
-                        Stilever_dasdasdsadadasdads</div>
+                        Stilever_dasdasdsadadasdads
+                      </div>
                       <div class="inner-menu__status">
                         <span
                           class="inner-menu__indicator _indicator-offline"
@@ -169,16 +169,16 @@
             </div>
             <div class="menu-main__navigator main-navigator">
               <div class="main-navigator__button">
-                <button>Личный кабинет</button>
+                <button class="page-swap-button">Личный кабинет</button>
               </div>
               <div class="main-navigator__button">
-                <button>Настройки</button>
+                <button>Список друзей</button>
               </div>
               <div class="main-navigator__button"><button>Меню</button></div>
             </div>
-            <div class="menu-main__button">.<button>Выход</button></div>
+            <div class="menu-main__button"><button>Выход</button></div>
           </div>
-          <div class="main__body body-main" >
+          <div class="main__body body-main">
             <div class="body-main__head head-body">
               <div class="head-body__main main-body">
                 <div class="main-body__title">Главная</div>
@@ -328,66 +328,79 @@
               </div>
             </div>
           </div>
-          <div class="main__account account-main" style="display: none;">
-            <div class="account-main__head account-main">
-              <div class="account-main__body account-body">
-                <div class="account-body__title">Главная</div>
-                <div class="account-body__inner"></div>
-                <div class="account-body__navigation">
-                  <div class="account-body__settings">
-                    <button>Настройки</button>
+          <div class="main__account account-main">
+            <div class="account-main__head account-main-head">
+              <div class="account-main-head__title">Личный кабинет</div>
+              <div class="account-main-head__inner"></div>
+              <div class="account-main-head__navigation">
+                <div class="account-main-head__settings">
+                  <button>Настройки</button>
+                </div>
+                <div class="account-main-head__user">
+                  <div class="account-main-head__avatar">
+                    <img src="img/icons/icon.svg" alt="" />
                   </div>
-                  <div class="account-body__user">
-                    <div class="account-body__avatar">
-                      <img src="img/icons/icon.svg" alt="" />
-                    </div>
-                    <div class="account-body__arrow">
-                      <button>
-                        <img src="img/icons/arrow-down.svg" alt="" />
-                      </button>
-                    </div>
+                  <div class="account-main-head__arrow">
+                    <button>
+                      <img src="img/icons/arrow-down.svg" alt="" />
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
             <div class="account-main__manage manage-account">
               <div class="manage-account__news">
-                <div class="manage-account__body account-body">
-                    <div class="account-body__image"><img src="img/Account-Avatar.jpg" alt="dadsa"></div>
-                    <div class="account-body__gallery">
-                      <div class="account-body__block"></div>
-                      <div class="account-body__block"></div>
-                      <div class="account-body__block"></div>
-                      <div class="account-body__block"></div>
-                      <div class="account-body__block"></div>
-                      <div class="account-body__block"></div>
-                      <div class="account-body__block"></div>
-                      <div class="account-body__block"></div>
-                      <div class="account-body__block"></div>
-                      <div class="account-body__block"></div>
-                    </div>
-                </div>
-                <div class="content-body__slider slider-content swiper-container">
-                  <div class="slider-content__wrapper swiper-wrapper">
-                    <div class="slider-content__slide swiper-slide _ibg">
-                      <img src="img/icons/advertising.svg" alt="" />
-                    </div>
-                    <div class="slider-content__slide swiper-slide _ibg">
-                      <img src="img/icons/advertising.svg" alt="" />
-                    </div>
-                    <div class="slider-content__slide swiper-slide _ibg">
-                      <img src="img/icons/advertising.svg" alt="" />
-                    </div>
-                    <div class="slider-content__slide swiper-slide _ibg">
-                      <img src="img/icons/advertising.svg" alt="" />
-                    </div>
-                    <div class="slider-content__slide swiper-slide _ibg">
-                      <img src="img/icons/advertising.svg" alt="" />
+                <div class="manage-account__body account-manage-body">
+                  <div class="account-manage-body__image">
+                    <img src="img/Account-Avatar.jpg" alt="dadsa" />
+                    <div class="account-manage-body__profile">
+                      <img src="img/profile-image.png" alt="dsads" />
+                      <p>STILEVER</p>
                     </div>
                   </div>
-                  <div class="slider-content__pagination swiper-pagination"></div>
+                  <div class="account-manage-body__gallery">
+                    <div class="account-manage-body__wrapper">
+                      <div class="account-manage-body__block">
+                        <img src="img/icons/bucks.png" alt="" />
+                      </div>
+                      <div class="account-manage-body__block _220"></div>
+                      <div class="account-manage-body__block"></div>
+                    </div>
+                    <div class="account-manage-body__wrapper">
+                      <div class="account-manage-body__block"></div>
+                      <div class="account-manage-body__block"></div>
+                      <div class="account-manage-body__block"></div>
+                      <div class="account-manage-body__block"></div>
+                    </div>
+                    <div class="account-manage-body__wrapper">
+                      <div class="account-manage-body__block _220"></div>
+                      <div class="account-manage-body__block"></div>
+                      <div class="account-manage-body__block"></div>
+                    </div>
+                  </div> 
+
+              </div>
+            </div>
+            </div>
+            <div class="account-main__slider swiper-container">
+              <div class="account-main__wrapper swiper-wrapper">
+                <div class="account-main__slide swiper-slide ">
+                  <img src="img/icons/advertising.svg" alt="" />
+                </div>
+                <div class="account-main__slide swiper-slide ">
+                  <img src="img/icons/advertising.svg" alt="" />
+                </div>
+                <div class="account-main__slide swiper-slide ">
+                  <img src="img/icons/advertising.svg" alt="" />
+                </div>
+                <div class="account-main__slide swiper-slide ">
+                  <img src="img/icons/advertising.svg" alt="" />
+                </div>
+                <div class="account-main__slide swiper-slide ">
+                  <img src="img/icons/advertising.svg" alt="" />
                 </div>
               </div>
+              <div class="account-main__pagination swiper-pagination"></div>
             </div>
           </div>
         </div>
