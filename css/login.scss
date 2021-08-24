@@ -149,7 +149,7 @@ li{
 		display: flex;
 		flex-direction: column;
 		@media (max-width: 980px) {
-			width: 40%;
+			width: 25%;
 		}
 		@media (max-width: 767px) {
 			padding: 2% 3% 2% 3%;
@@ -208,6 +208,7 @@ li{
 		border-radius: 20px;
   }
   &__banner{
+		width: 100%;
     margin-top: 20px;
     height: 45%;
     background-color: #fff;
@@ -231,6 +232,11 @@ li{
 	// .autorize__image
 
 	&__image {
+		img{
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
 	}
 
 	// .autorize__title
@@ -313,7 +319,7 @@ li{
 	// .banner__wrapper
 
 	&__wrapper {
-		height: 244px;
+		height: 100%;
 	}
 
 	// .banner__slide
@@ -321,8 +327,9 @@ li{
 	&__slide {
 		padding-bottom: 10px;
 		img{
-			width: 244px;
-			height: 244px;
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
 		}
 	}
 
@@ -342,6 +349,9 @@ li{
 
 	&__button-prev {
 		color: rgba($color: #fff, $alpha: 0.7);
+		@media (max-width: 980px) {
+			
+		}
 	}
 
 	// .banner__button-next

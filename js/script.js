@@ -194,7 +194,8 @@ window.onload = () => {
 			let text = change.innerText;
 			const fullNickname = document.createElement(`span`)
 			fullNickname.innerText = text;
-			fullNickname.style.cssText = `display:none;`;
+			if(text.length > 11){
+				fullNickname.style.cssText = `display:none;`;
 			change.appendChild(fullNickname);
 			change.addEventListener('mouseover', () => {
 				fullNickname.style.cssText = `display:block;`;
@@ -202,6 +203,7 @@ window.onload = () => {
 			change.addEventListener('mouseout', () => {
 				fullNickname.style.cssText = `display:none;`;
 			})
+			}
 		})
 }
 
